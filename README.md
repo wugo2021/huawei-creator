@@ -8,6 +8,6 @@ Generate ARM64 AB (Huawei device) from ARM64 AB and include patchs and optimisat
 Generate ARM64 A-only from ARM64 AB (target image name is s-aonly.img):(deprecated since Android 12): 
 
     sudo ./run-huawei-aonly.sh systemAB.img "LeaOS"
-    
+:     
 
     sudo bash run-huawei-aonly.sh systemAB.img "LeaOS"
