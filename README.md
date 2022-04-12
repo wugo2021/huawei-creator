@@ -10,3 +10,4 @@ Generate ARM64 A-only from ARM64 AB (target image name is s-aonly.img):(deprecat
     sudo ./run-huawei-aonly.sh systemAB.img "LeaOS"
     
 
+    sudo bash run-huawei-aonly.sh systemAB.img "LeaOS"
