@@ -1,3 +1,7 @@
+    git clone https://github.com/Iceows/huawei-creator.git huawei-creator-11
+.
+
+    cd huawei-creator
 -
 Generate ARM64 AB (Huawei device) from ARM64 AB and include patchs and optimisations (target image name is s-ab.img):
 
