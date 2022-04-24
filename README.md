@@ -1,4 +1,4 @@
-    git clone https://github.com/Iceows/huawei-creator.git huawei-creator-11
+    git clone https://github.com/Iceows/huawei-creator.git
 .
 
     cd huawei-creator
