@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Usage:
-#sudo bash run-huawei-aonly.sh  [/path/to/system.img] [version]
+#sudo bash run-huawei-aonly.sh  [/path/to/system.img] [version] [model]
 
 #cleanups
 umount d
