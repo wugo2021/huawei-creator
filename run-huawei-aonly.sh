@@ -394,12 +394,17 @@ mount -o loop,rw s-aonly.img d
     	sed -i "/ro.product.model/d" etc/prop.default
     	sed -i "/ro.product.system.model/d" etc/prop.default
         sed -i "/ro.product.name/d" etc/prop.default
+	sed -i"ro.product.locale.language/d" >> etc/prop.default
+        sed -i "ro.product.locale.region/d" >> etc/prop.default
+	
     	echo "ro.product.manufacturer=HUAWEI" >> etc/prop.default
     	echo "ro.product.system.model=hi6250" >> etc/prop.default
     	echo "ro.product.model=$model" >> etc/prop.default
         echo "ro.product.name=$model" >> etc/prop.default
         echo "ro.system.build.version.incremental=$data" >> etc/prop.default
-    	
+        echo "ro.product.locale.language=zh" >> etc/prop.default
+        echo "ro.product.locale.region=CN" >> etc/prop.default
+
     	#VERSION="LeaOS"
     	#VERSION="crDRom v316 - Mod Iceows"
     	#VERSION="LiR v316 - Mod Iceows"
