@@ -17,6 +17,7 @@ targetArch=64
 srcFile="$1"
 versionNumber="$2"
 model="$3"
+data="$4"
 
 if [ ! -f "$srcFile" ];then
 	echo "Usage: sudo bash run-huawei-aonly.sh [/path/to/system.img] [version] [model] "
@@ -391,9 +392,12 @@ mount -o loop,rw s-aonly.img d
     		
     	sed -i "/ro.product.model/d" etc/prop.default
     	sed -i "/ro.product.system.model/d" etc/prop.default
+        sed -i "/ro.product.name/d" etc/prop.default
     	echo "ro.product.manufacturer=HUAWEI" >> etc/prop.default
     	echo "ro.product.system.model=hi6250" >> etc/prop.default
     	echo "ro.product.model=$model" >> etc/prop.default
+        echo "ro.product.name=$model" >> etc/prop.default
+        
     	
     	#VERSION="LeaOS"
     	#VERSION="crDRom v316 - Mod Iceows"
