@@ -228,16 +228,16 @@ mount -o loop,rw s-aonly.img d
 	cp "$origin/files-patch/system/bin/rw-system.sh" bin/rw-system.sh
 	xattr -w security.selinux u:object_r:phhsu_exec:s0 bin/rw-system.sh
 	
-	# Add SafetyNet and Pixel Sppof script
-	# cp "$origin/files-patch/system/bin/phh-on-data.sh" bin/phh-on-data.sh
-	# xattr -w security.selinux u:object_r:phhsu_exec:s0 bin/phh-on-data.sh
-	# cp "$origin/files-patch/system/bin/phh-prop-handler.sh" bin/phh-prop-handler.sh
-	# xattr -w security.selinux u:object_r:system_file:s0 bin/phh-prop-handler.sh		
-	# cp "$origin/files-patch/system/bin/phh-securize.sh" bin/phh-securize.sh
-	# xattr -w security.selinux u:object_r:system_file:s0 bin/phh-securize.sh	
-	# cp "$origin/files-patch/system/bin/phh-remotectl.sh" bin/phh-remotectl.sh
-	# xattr -w security.selinux u:object_r:system_file:s0 bin/phh-remotectl.sh
-	# cp "$origin/files-patch/system/phh/secure.sh" phh/secure.sh
+	 # Add SafetyNet and Pixel Sppof script
+	 cp "$origin/files-patch/system/bin/phh-on-data.sh" bin/phh-on-data.sh
+	 xattr -w security.selinux u:object_r:phhsu_exec:s0 bin/phh-on-data.sh
+	 cp "$origin/files-patch/system/bin/phh-prop-handler.sh" bin/phh-prop-handler.sh
+	 xattr -w security.selinux u:object_r:system_file:s0 bin/phh-prop-handler.sh		
+	 cp "$origin/files-patch/system/bin/phh-securize.sh" bin/phh-securize.sh
+	 xattr -w security.selinux u:object_r:system_file:s0 bin/phh-securize.sh	
+	 cp "$origin/files-patch/system/bin/phh-remotectl.sh" bin/phh-remotectl.sh
+	 xattr -w security.selinux u:object_r:system_file:s0 bin/phh-remotectl.sh
+	 cp "$origin/files-patch/system/phh/secure.sh" phh/secure.sh
 		
 
 
