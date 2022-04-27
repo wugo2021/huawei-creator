@@ -389,7 +389,8 @@ mount -o loop,rw s-aonly.img d
 
 	# adb root by default    	
     	#sed -i 's/^ro.secure=1/ro.secure=0/' etc/prop.default
-    		
+  
+        #About the phone
     	sed -i "/ro.product.model/d" etc/prop.default
     	sed -i "/ro.product.system.model/d" etc/prop.default
         sed -i "/ro.product.name/d" etc/prop.default
