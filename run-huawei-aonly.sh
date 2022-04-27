@@ -390,7 +390,7 @@ mount -o loop,rw s-aonly.img d
 	# adb root by default    	
     	#sed -i 's/^ro.secure=1/ro.secure=0/' etc/prop.default
   
-        #About the phone
+        #About the phone *************************************************************************************
     	sed -i "/ro.product.model/d" etc/prop.default
     	sed -i "/ro.product.system.model/d" etc/prop.default
         sed -i "/ro.product.name/d" etc/prop.default
@@ -398,7 +398,7 @@ mount -o loop,rw s-aonly.img d
     	echo "ro.product.system.model=hi6250" >> etc/prop.default
     	echo "ro.product.model=$model" >> etc/prop.default
         echo "ro.product.name=$model" >> etc/prop.default
-        
+        echo "ro.system.build.version.incremental=$data" >> etc/prop.default
     	
     	#VERSION="LeaOS"
     	#VERSION="crDRom v316 - Mod Iceows"
