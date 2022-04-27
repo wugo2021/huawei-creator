@@ -401,7 +401,7 @@ mount -o loop,rw s-aonly.img d
     	echo "ro.product.system.model=hi6250" >> etc/prop.default
     	echo "ro.product.model=$model" >> etc/prop.default
         echo "ro.product.name=$model" >> etc/prop.default
-        echo "ro.system.build.version.incremental=$data" >> etc/prop.default
+        echo "ro.system.build.version.incremental=eng.crossg.$data" >> etc/prop.default
       
 
     	#VERSION="LeaOS"
