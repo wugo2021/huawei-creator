@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Usage:
-#sudo bash run-huawei-aonly.sh  [/path/to/system.img] [version] [model]
+#sudo bash run-huawei-aonly.sh  [/path/to/system.img] [version] [model] [data]
 
 #cleanups
 umount d
@@ -20,7 +20,7 @@ model="$3"
 data="$4"
 
 if [ ! -f "$srcFile" ];then
-	echo "Usage: sudo bash run-huawei-aonly.sh [/path/to/system.img] [version] [model] "
+	echo "Usage: sudo bash run-huawei-aonly.sh [/path/to/system.img] [version] [model] [data] "
 	exit 1
 fi
 
