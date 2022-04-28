@@ -395,7 +395,7 @@ mount -o loop,rw s-aonly.img d
     	sed -i "/ro.product.system.model/d" etc/prop.default
         sed -i "/ro.product.name/d" etc/prop.default
         sed -i "ro.build.display.id/d" build.prop
-      
+        #sed -i "ro.product.locale=en-US/d" build.prop
 	
     	echo "ro.product.manufacturer=HUAWEI" >> etc/prop.default
     	echo "ro.product.system.model=hi6250" >> etc/prop.default
