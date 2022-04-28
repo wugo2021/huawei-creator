@@ -394,15 +394,14 @@ mount -o loop,rw s-aonly.img d
     	sed -i "/ro.product.model/d" etc/prop.default
     	sed -i "/ro.product.system.model/d" etc/prop.default
         sed -i "/ro.product.name/d" etc/prop.default
-
+        sed -i "ro.build.display.id/d" build.prop
       
 	
     	echo "ro.product.manufacturer=HUAWEI" >> etc/prop.default
     	echo "ro.product.system.model=hi6250" >> etc/prop.default
     	echo "ro.product.model=$model" >> etc/prop.default
         echo "ro.product.name=$model" >> etc/prop.default
-        echo "ro.system.build.version.incremental=eng.crossg.$data" >> etc/prop.default
-      
+        echo "ro.build.display.id=RQ3A.211001.001.$data" >> build.prop
 
     	#VERSION="LeaOS"
     	#VERSION="crDRom v316 - Mod Iceows"
