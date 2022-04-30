@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Usage:
-#sudo bash run-huawei-aonly.sh  [/path/to/system.img] [version] [model] [data]
+#sudo bash run-huawei-aonly.sh  [/path/to/system.img] [version] [model] [build]
 
 #cleanups
 umount d
@@ -17,10 +17,10 @@ targetArch=64
 srcFile="$1"
 versionNumber="$2"
 model="$3"
-data="$4"
+build="$4"
 
 if [ ! -f "$srcFile" ];then
-	echo "Usage: sudo bash run-huawei-aonly.sh [/path/to/system.img] [version] [model] [data] "
+	echo "Usage: sudo bash run-huawei-aonly.sh [/path/to/system.img] [version] [model] [build] "
 	exit 1
 fi
 
@@ -394,18 +394,17 @@ mount -o loop,rw s-aonly.img d
     	sed -i "/ro.product.model/d" etc/prop.default
     	sed -i "/ro.product.system.model/d" etc/prop.default
         sed -i "/ro.product.name/d" etc/prop.default
-        
-        #sed -i "ro.build.display.id/d" etc/prop.default
-	#sed -i "ro.build.display.id/d" build.prop
-        #sed -i "ro.product.locale=en-US/d" build.prop
+        sed -i "/ro.build.display.id/d" etc/prop.default
+	sed -i "/ro.build.display.id/d" build.prop
+	
+        #sed -i "/ro.product.locale=en-US/d" build.prop
 	
     	echo "ro.product.manufacturer=HUAWEI" >> etc/prop.default
     	echo "ro.product.system.model=hi6250" >> etc/prop.default
     	echo "ro.product.model=$model" >> etc/prop.default
         echo "ro.product.name=$model" >> etc/prop.default
-        
-        #echo "ro.build.display.id=$data" >> etc/prop.default
-	#echo "ro.build.display.id=$data" >> build.prop
+        echo "ro.build.display.id=$build" >> etc/prop.default
+	echo "ro.build.display.id=$build" >> build.prop
         
 
     	#VERSION="LeaOS"
