@@ -430,9 +430,6 @@ mount -o loop,rw s-aonly.img d
    	echo "sys.usb.ffs.ready=0" >> etc/prop.default
 	echo "sys.usb.ffs_hdb.ready=0" >> etc/prop.default
    	echo "sys.usb.state=mtp" >> etc/prop.default
-   	
-
-	#echo "ro.secure=0" >> etc/prop.default
 	
 	echo "persist.sys.sf.native_mode=1" >> etc/prop.default
 	echo "persist.sys.sf.color_mode=1.0" >> etc/prop.default
