@@ -387,9 +387,9 @@ mount -o loop,rw s-aonly.img d
 	echo "## Adding hi6250 props" >> etc/prop.default
     	echo "#" >> etc/prop.default
 
-	# adb root by default    	
+	# adb root by default   (ro.secure=1/ro.secure=0 )	
     	#sed -i 's/^ro.secure=1/ro.secure=0/' etc/prop.default
-  
+        echo "ro.adb.secure=1" >> etc/prop.default
         #About the phone *************************************************************************************
     	sed -i "/ro.product.model/d" etc/prop.default
     	sed -i "/ro.product.system.model/d" etc/prop.default
@@ -397,7 +397,7 @@ mount -o loop,rw s-aonly.img d
         sed -i "/ro.build.display.id/d" etc/prop.default
 	sed -i "/ro.build.display.id/d" build.prop
 	
-        #sed -i "/ro.product.locale=en-US/d" build.prop
+        #sed -i "/ro.product.locale=en-US/d" build.prop	
 	
     	echo "ro.product.manufacturer=HUAWEI" >> etc/prop.default
     	echo "ro.product.system.model=hi6250" >> etc/prop.default
