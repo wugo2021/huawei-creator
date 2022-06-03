@@ -1,5 +1,0 @@
-*.img
-*.xz
-tmp/
-vendor_vndk/
-*.7z
