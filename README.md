@@ -12,7 +12,7 @@ Generate ARM64 A-only (Huawei device) from ARM64 AB . 〈target image name is (i
    sudo ./run-huawei-aonly.sh systemAB.img "LeaOS" "PRA-LX1"
 :     
 
-    sudo bash run-huawei-aonly.sh systemAB.img 
+    sudo bash run-huawei-aonly.sh systemAB.img "LeaOS" "PRA-LX1"
 Generate ARM64 A-only (Huawei device) from ARM64 A-only . 〈target image name is (input file name)-aonly.img〉,  (deprecated since Android 12): 
 
     ssudo bash udo ./run-huawei-a-to-a.sh system.img 
