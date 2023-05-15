@@ -1,7 +1,7 @@
     git clone https://github.com/wugo2021/huawei-creator.git
 .
 
-    cd huawei-creator
+    cd huawei-cred huawei-creator
 -
 Generate ARM64 AB (Huawei device) from ARM64 AB and include patchs and optimisations (target image name is s-ab.img):
 
