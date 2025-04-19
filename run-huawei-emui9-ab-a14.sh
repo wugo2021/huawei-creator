@@ -476,7 +476,7 @@ mount -o loop,rw s-ab-raw.img d
 	cp "$origin/files-patch/system/bin/tee_auth_daemon" bin/tee_auth_daemon
 	xattr -w security.selinux u:object_r:system_file:s0  bin/tee_auth_daemon
 	cp "$origin/files-patch/system/bin/79b77788-9789-4a7a-a2be-b60155eef5f4.sec" bin/79b77788-9789-4a7a-a2be-b60155eef5f4.sec
-	xattr -w security.selinux u:object_r:system_file:s0  bin/79b77788-9789-4a7a-a2be-b60155eef5f4
+	xattr -w security.selinux u:object_r:system_file:s0  bin/79b77788-9789-4a7a-a2be-b60155eef5f4.sec
 	
 	
 	# Codec bluetooth 32 bits
