@@ -45,7 +45,7 @@ mount -o loop,rw s-ab-raw.img d
 	rm -rf preavs
         #有病毒
 	rm -f -r sysmain/system/priv-app/LiveWallpapersPicker
-        rm -f -r sysmain/system/priv-app/shell
+        rm -f -r sysmain/system/priv-app/Shell
 
  
 	mkdir splash2
