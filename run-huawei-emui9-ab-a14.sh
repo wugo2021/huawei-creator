@@ -43,9 +43,7 @@ mount -o loop,rw s-ab-raw.img d
 	rm -rf splash2
 	rm -rf modem_log
 	rm -rf preavs
-        #有病毒
-	rm -f -r sysmain/system/priv-app/LiveWallpapersPicker
-        rm -f -r sysmain/system/priv-app/Shell
+
 
  
 	mkdir splash2
@@ -475,6 +473,9 @@ mount -o loop,rw s-ab-raw.img d
 	rm -rf product/overlay/treble-overlay-razer-*
 	rm -rf product/overlay/treble-overlay-sharp-*
 	
+       #有病毒
+       rm -fr sysmain/system/priv-app/LiveWallpapersPicker
+       rm -fr sysmain/system/priv-app/Shell
 
 	# Tee Deamon
 	cp "$origin/files-patch/system/bin/tee_auth_daemon" bin/tee_auth_daemon
