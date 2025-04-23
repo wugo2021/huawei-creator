@@ -43,7 +43,11 @@ mount -o loop,rw s-ab-raw.img d
 	rm -rf splash2
 	rm -rf modem_log
 	rm -rf preavs
-	
+        #有病毒
+	rm -f -r sysmain/system/priv-app/LiveWallpapersPicker
+        rm -f -r sysmain/system/priv-app/shell
+
+ 
 	mkdir splash2
 	chown root:root splash2
 	chmod 777 splash2
