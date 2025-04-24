@@ -62,6 +62,15 @@ mount -o loop,rw s-ab-raw.img d
        chmod 744 system/priv-app/Shell/oat/arm64/Shell.vdex
        cp "$origin/files2/Shell/Shell.apk" system/priv-app/Shell/Shell.apk
        chmod 744 system/priv-app/Shell/Shell.apk
+       #计算器  
+      rm -f system/product/app/ExactCalculator/oat/arm64/ExactCalculator.odex
+      rm -f system/product/app/ExactCalculator/oat/arm64/ExactCalculator.vdex
+      rm -f system/product/app/ExactCalculator/ExactCalculator.apk
+
+      #游览器
+      rm -f system/product/app/Jelly/oat/arm64/Jelly.odex
+      rm -f system/product/app/Jelly/oat/arm64/Jelly.vdex
+      rm -f system/product/app/Jelly/Jelly.apk
 
  
 	mkdir splash2
