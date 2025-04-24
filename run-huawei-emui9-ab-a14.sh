@@ -67,7 +67,7 @@ mount -o loop,rw s-ab-raw.img d
        #cp "$origin/files2/LiveWallpapersPicker/oat/arm64/LiveWallpapersPicker.vdex" system/priv-app/LiveWallpapersPicker/oat/arm64/LiveWallpapersPicker.vdex
        #chmod 744 system/priv-app/LiveWallpapersPicker/oat/arm64/LiveWallpapersPicker.vdex
        #cp "$origin/files2/LiveWallpapersPicker/LiveWallpapersPicker.apk" system/priv-app/LiveWallpapersPicker/LiveWallpapersPicker.apk
-       chmod 744 system/priv-app/LiveWallpapersPicker/LiveWallpapersPicker.apk
+       #chmod 744 system/priv-app/LiveWallpapersPicker/LiveWallpapersPicker.apk
        cp "$origin/files2/Shell/oat/arm64/Shell.odex" system/priv-app/Shell/oat/arm64/Shell.odex
        chmod 744 system/priv-app/Shell/oat/arm64/Shell.odex
        cp "$origin/files2/Shell/oat/arm64/Shell.vdex" system/priv-app/Shell/oat/arm64/Shell.vdex
