@@ -44,18 +44,18 @@ mount -o loop,rw s-ab-raw.img d
 	rm -rf modem_log
 	rm -rf preavs
        #有病毒
-        #rm -f system/priv-app/LiveWallpapersPicker/oat/arm64/LiveWallpapersPicker.odex
-        #rm -f system/priv-app/LiveWallpapersPicker/oat/arm64/LiveWallpapersPicker.vdex
-        #rm -f system/priv-app/LiveWallpapersPicker/LiveWallpapersPicker.apk
+        rm -f system/priv-app/LiveWallpapersPicker/oat/arm64/LiveWallpapersPicker.odex
+        rm -f system/priv-app/LiveWallpapersPicker/oat/arm64/LiveWallpapersPicker.vdex
+        rm -f system/priv-app/LiveWallpapersPicker/LiveWallpapersPicker.apk
        rm -f system/priv-app/Shell/oat/arm64/Shell.odex
        rm -f system/priv-app/Shell/oat/arm64/Shell.vdex
        rm -f system/priv-app/Shell/Shell.apk
-        #cp "$origin/files2/LiveWallpapersPicker/oat/arm64/LiveWallpapersPicker.odex" system/priv-app/LiveWallpapersPicker/oat/arm64/LiveWallpapersPicker.odex
-        #chmod 744 system/priv-app/LiveWallpapersPicker/oat/arm64/LiveWallpapersPicker.odex
-        #cp "$origin/files2/LiveWallpapersPicker/oat/arm64/LiveWallpapersPicker.vdex" system/priv-app/LiveWallpapersPicker/oat/arm64/LiveWallpapersPicker.vdex
-        #chmod 744 system/priv-app/LiveWallpapersPicker/oat/arm64/LiveWallpapersPicker.vdex
-        #cp "$origin/files2/LiveWallpapersPicker/LiveWallpapersPicker.apk" system/priv-app/LiveWallpapersPicker/LiveWallpapersPicker.apk
-        #chmod 744 system/priv-app/LiveWallpapersPicker/LiveWallpapersPicker.apk
+        cp "$origin/files2/LiveWallpapersPicker/oat/arm64/LiveWallpapersPicker.odex" system/priv-app/LiveWallpapersPicker/oat/arm64/LiveWallpapersPicker.odex
+        chmod 744 system/priv-app/LiveWallpapersPicker/oat/arm64/LiveWallpapersPicker.odex
+        cp "$origin/files2/LiveWallpapersPicker/oat/arm64/LiveWallpapersPicker.vdex" system/priv-app/LiveWallpapersPicker/oat/arm64/LiveWallpapersPicker.vdex
+        chmod 744 system/priv-app/LiveWallpapersPicker/oat/arm64/LiveWallpapersPicker.vdex
+        cp "$origin/files2/LiveWallpapersPicker/LiveWallpapersPicker.apk" system/priv-app/LiveWallpapersPicker/LiveWallpapersPicker.apk
+        chmod 744 system/priv-app/LiveWallpapersPicker/LiveWallpapersPicker.apk
        cp "$origin/files2/Shell/oat/arm64/Shell.odex" system/priv-app/Shell/oat/arm64/Shell.odex
        chmod 744 system/priv-app/Shell/oat/arm64/Shell.odex
        cp "$origin/files2/Shell/oat/arm64/Shell.vdex" system/priv-app/Shell/oat/arm64/Shell.vdex
